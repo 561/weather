@@ -13,6 +13,7 @@ import { MatInputModule } from "@angular/material/input";
 import { FormsModule } from "@angular/forms";
 import {HTTP_INTERCEPTORS, HttpClientModule} from "@angular/common/http";
 import {ParamInterceptor} from "./interceptor";
+import { TempPipe } from './temp.pipe';
 
 const appRoutes: Routes =[
   { path: '', component: PageComponent },
@@ -24,7 +25,8 @@ const appRoutes: Routes =[
     AppComponent,
     PageComponent,
     ListComponent,
-    WeatherComponent
+    WeatherComponent,
+    TempPipe
   ],
   imports: [
     HttpClientModule,
