@@ -1,0 +1,9 @@
+<mat-form-field>
+  <mat-label>City:</mat-label>
+  <input [(ngModel)]="cityName" matInput />
+</mat-form-field>
+<button class="button" mat-raised-button color="primary" (click)="goToCity()">Search</button>
+<app-list *ngIf="days.length" [days] = days></app-list>
+<div  *ngIf="error">
+  Couldn't find a city!
+</div>

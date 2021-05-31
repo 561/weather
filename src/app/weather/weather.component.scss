@@ -1,0 +1,19 @@
+.day-block {
+  display: flex;
+  margin-top: 5px;
+  border: 1px #55bbbb solid;
+  width: 250px;
+  border-radius: 10px;
+}
+
+.day {
+  min-width: 120px;
+  margin: 0;
+  text-align: center;
+}
+
+.temp {
+  text-align: center;
+  min-width: 130px;
+  margin: 0;
+}

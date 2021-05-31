@@ -1,0 +1,11 @@
+<div class="headers">
+  <div class="day sort" (click)="sortByDays()">
+    <p class="header-text">day</p>
+    <img class="icon" alt="" src="../../assets/sort.png" />
+  </div>
+  <div class="temp sort"(click)="sortByTemps()">
+    <p class="header-text">temperature</p>
+    <img class="icon" alt=""  src="../../assets/sort.png" />
+  </div>
+</div>
+<app-weather *ngFor="let day of days" [day]="day"></app-weather>
